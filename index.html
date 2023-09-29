@@ -1,119 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>XSpaces - Processo de desenvolvimento</title>
     <link rel="stylesheet" href="css/mdb.min.css" />
-  </head>
-  <body>
+</head>
 
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
-    body {
-        background: black;
-    }
-    #main {
-        width: 100%;
-        min-height: 100vh;
-        color: white;
-        font-family: 'Poppins', sans-serif;
-        padding-top: 2.5rem;
-    }
+<body>
 
-    .bold {
-        font-weight: 700;
-    }
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
-    .extra-bold {
-        font-weight: 900;
-    }
-    .logo {
-        width: 10rem;
-        height: auto;
-    }
+        body {
+            background: BLACK;
+            scrollbar-width: thin;
+            scrollbar-color: rgba(255, 255, 255, 0.5);
+        }
 
-    .h1 {
-        font-size: 2rem;
-    }
-    .h2 {
-        font-size: 1.6rem;
-    }
-    .half-size {
-        max-width: 60%;
-    }
-    .process {
-        padding-left: 2rem;
-        margin-bottom: 4rem;
-        border-left: 4px solid rgba(255,255,255,0.2);
-        transition: .3s ease-in-out;
-    }
-    .process:hover {
-        border-left: 4px solid #e24242;
-        transition: .3s ease-in-out;
-    }
-    p {
-        opacity: .5;
-    }
-    .red-principal {
-        color: #e24242;
-    }
-    .mr-2 {
-        margin-right: 2rem;
-    }
-  </style>
+        #main {
+            width: 100%;
+            min-height: 100vh;
+            color: rgba(231, 233, 234);
+            font-family: 'Poppins', sans-serif;
+            padding-top: 2.5rem;
+        }
+
+        .bold {
+            font-weight: 700;
+        }
+
+        .extra-bold {
+            font-weight: 900;
+        }
+
+        .logo {
+            width: 10rem;
+            height: auto;
+            transition: .3s ease-in-out;
+            filter: grayscale(1);
+        }
+
+        .logo:hover {
+            filter: grayscale(0);
+            transition: .3s ease-in-out;
+        }
+
+        .h1 {
+            font-size: 2rem;
+        }
+
+        .h2 {
+            font-size: 1.6rem;
+        }
+
+        .half-size {
+            max-width: 60%;
+            margin: 0 auto;
+        }
+
+        .process {
+            padding-left: 2rem;
+            margin-bottom: 2rem !important;
+            /* border-left: 4px solid rgba(255, 255, 255, 0.2); */
+            transition: .3s ease-in-out;
+            padding: 3rem 2rem;
+            background: rgba(255, 255, 255, 0.06);
+            border-radius: 5px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            max-width: 50rem;
+            margin: 0 auto;
+            display: block;
+            position: relative;
+        }
+
+        .process:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transition: .3s ease-in-out;
+        }
+
+        p {
+            opacity: .5;
+            margin-bottom: 0;
+        }
+
+        .red-principal {
+            color: #e24242;
+        }
+
+        .mr-2 {
+            margin-right: 2rem;
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+            /* Largura da scrollbar */
+        }
+
+        ::-webkit-scrollbar-track {
+            background-color: transparent;
+            /* Fundo transparente */
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: rgba(255, 255, 255, 0.1);
+            /* Cor do indicador da scrollbar (branca com transparência) */
+            border-radius: 3px;
+            /* Cantos arredondados */
+        }
+    </style>
 
     <div id="main">
         <div class="container">
-           <div class="mb-5">
-           <img src="img/logo.png" alt="" class="logo mr-2">
-            <img src="img/evoa.png" alt="" class="logo">
-           </div>
-            <!-- <h1 class="h1 extra-bold mb-5"><span class="red-principal">PROCESSO</span> DE DESENVOLVIMENTO</h1> -->
-            <div class="process">
-             <h2 class="bold mb-3 h2">1. ESTRUTURAÇÃO DE EQUIPE</h2>
-             <p class="half-size">Criar uma equipe Scrum composta por membros multifuncionais, incluindo desenvolvedores, designers, testadores e um Product Owner (PO) que represente os interesses do cliente.</p>
+            <div class="mb-5 text-center">
+                <img src="img/logo.png" alt="" class="logo mr-2">
+                <img src="img/evoa.png" alt="" class="logo">
             </div>
-            <div class="process">
-             <h2 class="bold mb-3 h2">2. BACKLOG DE PRODUTO</h2>
-             <p class="half-size">Criar um Backlog do Produto que liste todos os recursos, funcionalidades e tarefas necessários para o desenvolvimento do MVP. Isso incluirá pesquisa, design, desenvolvimento e testes.</p>
+
+            <h1 class="h1 extra-bold mb-5 text-center">PROCESSO DE DESENVOLVIMENTO
+            </h1>
+            <div class="process card">
+                <h2 class="bold mb-3 h2">1. ESTRUTURAÇÃO DE EQUIPE</h2>
+                <p class="half-size">Criar uma equipe Scrum composta por membros multifuncionais, incluindo
+                    desenvolvedores, designers, testadores e um Product Owner (PO) que represente os interesses do
+                    cliente.</p>
             </div>
-            <div class="process">
-             <h2 class="bold mb-3 h2">3. SPRINT PLANNING</h2>
-             <p class="half-size">Realizar reuniões de planejamento de Sprint para definir os objetivos da Sprint atual (geralmente 2-4 semanas) com base no Backlog do Produto. Priorizar as tarefas que são essenciais para o MVP.</p>
+            <div class="process card">
+                <h2 class="bold mb-3 h2">2. BACKLOG DE PRODUTO</h2>
+                <p class="half-size">Criar um Backlog do Produto que liste todos os recursos, funcionalidades e tarefas
+                    necessários para o desenvolvimento do MVP. Isso incluirá pesquisa, design, desenvolvimento e testes.
+                </p>
             </div>
-            <div class="process">
-             <h2 class="bold mb-3 h2">4. SPRINTS</h2>
-             <p class="half-size">Dividir o projeto em várias Sprints, cada uma com um conjunto específico de tarefas a serem concluídas. No final de cada Sprint, deve haver um incremento funcional do MVP.</p>
+            <div class="process card">
+                <h2 class="bold mb-3 h2">3. SPRINT PLANNING</h2>
+                <p class="half-size">Realizar reuniões de planejamento de Sprint para definir os objetivos da Sprint
+                    atual (geralmente 2-4 semanas) com base no Backlog do Produto. Priorizar as tarefas que são
+                    essenciais para o MVP.</p>
             </div>
-            <div class="process">
-             <h2 class="bold mb-3 h2">5. REUNIÕES DIÁRIAS</h2>
-             <p class="half-size">Realizar reuniões diárias curtas para que a equipe compartilhe atualizações sobre o progresso, discuta obstáculos e ajuste o plano conforme necessário.</p>
+            <div class="process card">
+                <h2 class="bold mb-3 h2">4. SPRINTS</h2>
+                <p class="half-size">Dividir o projeto em várias Sprints, cada uma com um conjunto específico de tarefas
+                    a serem concluídas. No final de cada Sprint, deve haver um incremento funcional do MVP.</p>
             </div>
-            <div class="process">
-             <h2 class="bold mb-3 h2">6. REVISÃO DA SPRINT</h2>
-             <p class="half-size">Após o término de cada Sprint, realizar uma reunião de revisão da Sprint com o cliente para demonstrar o que foi realizado e obter feedback imediato.</p>
+            <div class="process card">
+                <h2 class="bold mb-3 h2">5. REUNIÕES DIÁRIAS</h2>
+                <p class="half-size">Realizar reuniões diárias curtas para que a equipe compartilhe atualizações sobre o
+                    progresso, discuta obstáculos e ajuste o plano conforme necessário.</p>
             </div>
-            <div class="process">
-             <h2 class="bold mb-3 h2">7. RETROSPECTIVA DA SPRINT</h2>
-             <p class="half-size">Realizar uma retrospectiva da Sprint com a equipe para identificar o que funcionou bem e o que pode ser melhorado no próximo ciclo.</p>
+            <div class="process card">
+                <h2 class="bold mb-3 h2">6. REVISÃO DA SPRINT</h2>
+                <p class="half-size">Após o término de cada Sprint, realizar uma reunião de revisão da Sprint com o
+                    cliente para demonstrar o que foi realizado e obter feedback imediato.</p>
             </div>
-            <div class="process">
-             <h2 class="bold mb-3 h2">8. ADAPTAÇÃO CONTÍNUA</h2>
-             <p class="half-size">Com base no feedback recebido durante as revisões da Sprint e nas retrospectivas, ajustar o Backlog do produto e o plano das próximas Sprints para refletir as mudanças nas prioridades e necessidades do cliente.</p>
+            <div class="process card">
+                <h2 class="bold mb-3 h2">7. RETROSPECTIVA DA SPRINT</h2>
+                <p class="half-size">Realizar uma retrospectiva da Sprint com a equipe para identificar o que funcionou
+                    bem e o que pode ser melhorado no próximo ciclo.</p>
             </div>
-            <div class="process">
-             <h2 class="bold mb-3 h2">9. ENTREGA DO MVP</h2>
-             <p class="half-size">Continuar a desenvolver e iterar até que o MVP esteja completo e pronto para entrega ao cliente.</p>
+            <div class="process card">
+                <h2 class="bold mb-3 h2">8. ADAPTAÇÃO CONTÍNUA</h2>
+                <p class="half-size">Com base no feedback recebido durante as revisões da Sprint e nas retrospectivas,
+                    ajustar o Backlog do produto e o plano das próximas Sprints para refletir as mudanças nas
+                    prioridades e necessidades do cliente.</p>
             </div>
-            <div class="process">
-             <h2 class="bold mb-3 h2">10. MONITORAMENTO E MELHORIA</h2>
-             <p class="half-size">Após a entrega do MVP, continuar a acompanhar o uso e a coletar feedback do cliente para fazer melhorias incrementais no produto.</p>
+            <div class="process card">
+                <h2 class="bold mb-3 h2">9. ENTREGA DO MVP</h2>
+                <p class="half-size">Continuar a desenvolver e iterar até que o MVP esteja completo e pronto para
+                    entrega ao cliente.</p>
             </div>
+            <div class="process card">
+                <h2 class="bold mb-3 h2">10. MONITORAMENTO E MELHORIA</h2>
+                <p class="half-size">Após a entrega do MVP, continuar a acompanhar o uso e a coletar feedback do cliente
+                    para fazer melhorias incrementais no produto.</p>
+            </div>
+        </div>
+        <div class="text-center mb-5 mt-5">
+            <a href="https://github.com/michelcoleoni" target="_blank"><img
+                    src="https://avatars.githubusercontent.com/u/65471940?v=4" alt="" class="" style="width: 5rem;"></a>
         </div>
     </div>
 
     <script type="text/javascript" src="js/mdb.min.js"></script>
-  </body>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="js/jquery.transit.js"></script>
+    <script src="js/cards.js"></script>
+
+
+</body>
+
 </html>
